@@ -1,0 +1,55 @@
+
+###
+GET http://127.0.0.1:8000/api/doctors/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/doctors/
+Content-Type: application/json
+
+{
+    "doctor_name": "Dr. Meera Joseph",
+    "specialization": "Cardiology",
+    "experience": 15,
+    "hospital": "Rajagiri Hospital",
+    "consultation_fee": 1200,
+    "available": true
+}
+
+
+###
+GET http://127.0.0.1:8000/api/doctors/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/api/doctors/6/
+Content-Type: application/json
+
+{
+    "doctor_name": "Dr. Meera Joseph",
+    "specialization": "ENT",
+    "experience": 15,
+    "hospital": "Rajagiri Hospital",
+    "consultation_fee": 1200,
+    "available": true
+}
+
+###
+DELETE http://127.0.0.1:8000/api/doctors/8/
+
+###
+GET  http://127.0.0.1:8000/api/appointment/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/appointment/
+Content-Type: application/json
+
+{
+    "patient_name": "Samuel",
+    "phone": "9876543210",
+    "doctor_id": 5,
+    "appoinment_date": "2026-10-30",
+    "problem": "Headache"
+}
+
